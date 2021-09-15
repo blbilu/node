@@ -77,7 +77,6 @@ router.get("/:keys", auth, async (req, res) => {
         'name' : {$regex:".*"+req.params.keys+".*"|| '',"$options" :'i'},
         'phone' : {$regex:".*"+req.params.keys+".*"|| '',"$options" :'i'},
         'email' : {$regex:".*"+req.params.keys+".*"|| '',"$options" :'i'},
-        // 'age' : {$regex:".*"+req.params.keys+".*"|| '',"$options" :'i'},
         'address' : {$regex:".*"+req.params.keys+".*"|| '',"$options" :'i'},
       }
     },
@@ -93,7 +92,6 @@ router.get("/:keys", auth, async (req, res) => {
   {"name" : new RegExp(val)},
   {"phone" : new RegExp(val)},
   {"email" : new RegExp(val)},
-  // {"age" : new RegExp(val)},
   {"address" : new RegExp(val)},
     
   ]).and([{
