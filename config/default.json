@@ -1,0 +1,6 @@
+{
+  "jwtPrivateKey": "unsecureKey",
+  "db": "mongodb+srv://dev1:root123@test.y39e9.mongodb.net/backend?retryWrites=true&w=majority",
+  "port": "3900",
+  "requiresAuth": true
+}
